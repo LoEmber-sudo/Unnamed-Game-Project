@@ -1,0 +1,24 @@
+﻿  Building Custom Rule C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/src/external/glfw/src/CMakeLists.txt
+  context.c
+  init.c
+  input.c
+  monitor.c
+  platform.c
+  vulkan.c
+  window.c
+  egl_context.c
+  osmesa_context.c
+  null_init.c
+  null_monitor.c
+  null_window.c
+  null_joystick.c
+  win32_module.c
+  win32_time.c
+  win32_thread.c
+  win32_init.c
+  win32_joystick.c
+  win32_monitor.c
+  win32_window.c
+  Compiling...
+  wgl_context.c
+  glfw.vcxproj -> C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\raylib\external\glfw\src\Release\glfw3.lib

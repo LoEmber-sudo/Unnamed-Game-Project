@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Projects/raylibCmakeSetup-master/build-vs/CMakeFiles/cmake.verify_globs
+C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/src/external/glfw/CMake/glfw3.pc.in
+C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/src/external/glfw/src/CMakeLists.txt

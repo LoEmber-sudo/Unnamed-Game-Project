@@ -1,0 +1,10 @@
+^C:\PROJECTS\RAYLIBCMAKESETUP-MASTER\BUILD-VS\CMAKEFILES\246C69D73DB4FA8E3202511D9631956A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Projects/raylibCmakeSetup-master -BC:/Projects/raylibCmakeSetup-master/build-vs --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Projects/raylibCmakeSetup-master/build-vs/game.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A7737C88-4279-3D65-B8E3-0BC34090C3F4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P C:/Projects/raylibCmakeSetup-master/build-vs/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P C:/Projects/raylibCmakeSetup-master/build-vs/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P C:/Projects/raylibCmakeSetup-master/build-vs/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P C:/Projects/raylibCmakeSetup-master/build-vs/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\246c69d73db4fa8e3202511d9631956a\generate.stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Projects/raylibCmakeSetup-master -BC:/Projects/raylibCmakeSetup-master/build-vs --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Projects/raylibCmakeSetup-master/build-vs/game.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CPack.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Templates\CPackConfig.cmake.in;C:\Projects\raylibCmakeSetup-master\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeCCompiler.cmake;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeCXXCompiler.cmake;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeRCCompiler.cmake;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeSystem.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\imgui-docking\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\CMakeOptions.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\AddIfFlagCompiles.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\BuildOptions.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\CompileDefinitions.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\CompilerFlags.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\EnumOption.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\GlfwImport.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\InstallConfigurations.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\JoinPaths.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\LibraryConfigurations.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\LibraryPathToLinkerFlags.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\PackConfigurations.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\PopulateConfigVariablesLocally.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\Uninstall.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\raylib-config-version.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\raylib.pc.in;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\CMake\glfw3.pc.in;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\CMake\glfw3Config.cmake.in;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\src\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\rlImGui\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\raylib\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\raylib\external\glfw\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\raylib\external\glfw\src\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\imgui-docking\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\rlImGui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Projects/raylibCmakeSetup-master -BC:/Projects/raylibCmakeSetup-master/build-vs --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Projects/raylibCmakeSetup-master/build-vs/game.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CPack.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Templates\CPackConfig.cmake.in;C:\Projects\raylibCmakeSetup-master\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeCCompiler.cmake;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeCXXCompiler.cmake;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeRCCompiler.cmake;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeSystem.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\imgui-docking\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\CMakeOptions.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\AddIfFlagCompiles.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\BuildOptions.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\CompileDefinitions.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\CompilerFlags.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\EnumOption.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\GlfwImport.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\InstallConfigurations.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\JoinPaths.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\LibraryConfigurations.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\LibraryPathToLinkerFlags.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\PackConfigurations.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\PopulateConfigVariablesLocally.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\Uninstall.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\raylib-config-version.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\raylib.pc.in;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\CMake\glfw3.pc.in;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\CMake\glfw3Config.cmake.in;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\src\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\rlImGui\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\raylib\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\raylib\external\glfw\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\raylib\external\glfw\src\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\imgui-docking\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\rlImGui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Projects/raylibCmakeSetup-master -BC:/Projects/raylibCmakeSetup-master/build-vs --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Projects/raylibCmakeSetup-master/build-vs/game.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CPack.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Templates\CPackConfig.cmake.in;C:\Projects\raylibCmakeSetup-master\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeCCompiler.cmake;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeCXXCompiler.cmake;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeRCCompiler.cmake;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeSystem.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\imgui-docking\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\CMakeOptions.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\AddIfFlagCompiles.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\BuildOptions.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\CompileDefinitions.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\CompilerFlags.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\EnumOption.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\GlfwImport.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\InstallConfigurations.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\JoinPaths.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\LibraryConfigurations.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\LibraryPathToLinkerFlags.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\PackConfigurations.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\PopulateConfigVariablesLocally.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\Uninstall.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\raylib-config-version.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\raylib.pc.in;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\CMake\glfw3.pc.in;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\CMake\glfw3Config.cmake.in;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\src\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\rlImGui\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\raylib\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\raylib\external\glfw\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\raylib\external\glfw\src\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\imgui-docking\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\rlImGui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Projects/raylibCmakeSetup-master -BC:/Projects/raylibCmakeSetup-master/build-vs --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Projects/raylibCmakeSetup-master/build-vs/game.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CPack.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Templates\CPackConfig.cmake.in;C:\Projects\raylibCmakeSetup-master\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeCCompiler.cmake;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeCXXCompiler.cmake;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeRCCompiler.cmake;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\4.0.1\CMakeSystem.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\imgui-docking\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\CMakeOptions.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\AddIfFlagCompiles.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\BuildOptions.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\CompileDefinitions.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\CompilerFlags.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\EnumOption.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\GlfwImport.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\InstallConfigurations.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\JoinPaths.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\LibraryConfigurations.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\LibraryPathToLinkerFlags.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\PackConfigurations.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\PopulateConfigVariablesLocally.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\Uninstall.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\cmake\raylib-config-version.cmake;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\raylib.pc.in;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\CMake\glfw3.pc.in;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\CMake\glfw3Config.cmake.in;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\raylib-5.0\src\external\glfw\src\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\thirdparty\rlImGui\CMakeLists.txt;C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\raylibCmakeSetup-master\build-vs\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\raylib\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\raylib\external\glfw\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\raylib-5.0\raylib\external\glfw\src\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\imgui-docking\CMakeFiles\generate.stamp;C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\rlImGui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

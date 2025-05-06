@@ -1,0 +1,16 @@
+﻿  main.cpp
+C:\Projects\raylibCmakeSetup-master\thirdparty\imgui-docking\imgui\imguiThemes.h(271,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '../src/main.cpp')
+  
+C:\Projects\raylibCmakeSetup-master\thirdparty\imgui-docking\imgui\imguiThemes.h(280,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '../src/main.cpp')
+  
+C:\Projects\raylibCmakeSetup-master\src\main.cpp(25,26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Projects\raylibCmakeSetup-master\src\main.cpp(26,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Projects\raylibCmakeSetup-master\src\main.cpp(132,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Projects\raylibCmakeSetup-master\src\main.cpp(132,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  raylib.lib(init.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+  Generating code
+  Finished generating code
+  game.vcxproj -> C:\Projects\raylibCmakeSetup-master\build-vs\Debug\game.exe

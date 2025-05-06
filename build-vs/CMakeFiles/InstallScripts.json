@@ -1,0 +1,13 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Projects/raylibCmakeSetup-master/build-vs/cmake_install.cmake",
+		"C:/Projects/raylibCmakeSetup-master/build-vs/thirdparty/raylib-5.0/cmake_install.cmake",
+		"C:/Projects/raylibCmakeSetup-master/build-vs/thirdparty/raylib-5.0/raylib/cmake_install.cmake",
+		"C:/Projects/raylibCmakeSetup-master/build-vs/thirdparty/raylib-5.0/raylib/external/glfw/cmake_install.cmake",
+		"C:/Projects/raylibCmakeSetup-master/build-vs/thirdparty/raylib-5.0/raylib/external/glfw/src/cmake_install.cmake",
+		"C:/Projects/raylibCmakeSetup-master/build-vs/thirdparty/imgui-docking/cmake_install.cmake",
+		"C:/Projects/raylibCmakeSetup-master/build-vs/thirdparty/rlImGui/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

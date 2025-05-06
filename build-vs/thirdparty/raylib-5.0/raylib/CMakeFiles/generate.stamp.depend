@@ -1,0 +1,20 @@
+# CMake generation dependency list for this directory.
+C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CPack.cmake
+C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CPackComponent.cmake
+C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/FindOpenGL.cmake
+C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/GNUInstallDirs.cmake
+C:/Program Files (x86)/CMake/share/cmake-4.0/Templates/CPackConfig.cmake.in
+C:/Projects/raylibCmakeSetup-master/build-vs/CMakeFiles/cmake.verify_globs
+C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/cmake/CompileDefinitions.cmake
+C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/cmake/GlfwImport.cmake
+C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/cmake/InstallConfigurations.cmake
+C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/cmake/JoinPaths.cmake
+C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/cmake/LibraryConfigurations.cmake
+C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/cmake/LibraryPathToLinkerFlags.cmake
+C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/cmake/PackConfigurations.cmake
+C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/cmake/PopulateConfigVariablesLocally.cmake
+C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/cmake/raylib-config-version.cmake
+C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/raylib.pc.in
+C:/Projects/raylibCmakeSetup-master/thirdparty/raylib-5.0/src/CMakeLists.txt

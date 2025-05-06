@@ -1,0 +1,3 @@
+﻿  Building Custom Rule C:/Projects/raylibCmakeSetup-master/thirdparty/rlImGui/CMakeLists.txt
+  rlImGui.cpp
+  rlimgui.vcxproj -> C:\Projects\raylibCmakeSetup-master\build-vs\thirdparty\rlImGui\Release\rlimgui.lib
