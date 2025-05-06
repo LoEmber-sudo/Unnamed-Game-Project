@@ -17,7 +17,7 @@ Art used:
     https://kenmi-art.itch.io/cute-fantasy-rpg
     Also my friend made some other stuff for free
 
-Hours Worked on Project: ~ 40 hours I will try to keep updating this
+Hours Worked on Project: ~ 42 hours I will try to keep updating this
 
 Features:
 
@@ -31,7 +31,5 @@ Features:
 
 Known Bugs (working on it):
 
-    movement not normalized
-    after hitting the player never stops walking anims
-
+    NONE YIPPIE
 
